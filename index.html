@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success S Pizza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid container-xl">
+            <a class="navbar-brand">Logo</a>
+            <form class="d-flex">
+                <button class="btn btn-outline-success" type="submit">Prices</button>
+            </form>
+        </div>
+    </nav> -->
+
+    <main>
+        <div class="generall d-flex">
+            <!-- <div class="row w-100"> -->
+            <div class="cool">
+                <div class="order_div m-3 border border-dark">
+                    <div class="card" style="width: 22rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Pizza Order</h5>
+
+                            <form>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control nameInput mb-3" placeholder="Username"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+
+                                <div class="input-group flex-nowrap">
+                                    <input type="tel" class="form-control phoneInput mb-3" placeholder="Phone number"
+                                        aria-label="Phone number" aria-describedby="addon-wrapping">
+                                </div>
+
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control addressInput mb-3" placeholder="User address"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+
+                                <div class="select_option d-flex justify-content-between align-items-center mb-3">
+                                    <label for="Dough thickness">
+                                        <h5>Dough thickness:</h5>
+                                    </label>
+                                    <select class="form-select w-50" id="selectThickness" aria-label="Default select example">
+                                        <option selected>Thin</option>
+                                        <!-- <option value="Thin">Thin</option> -->
+                                        <option value="Medium">Medium</option>
+                                        <option value="Thick">Thick</option>
+                                    </select>
+                                </div>
+
+                                <div class="select_option d-flex justify-content-between align-items-center mb-3">
+                                    <label for="Dough thickness">
+                                        <h5>Size:</h5>
+                                    </label>
+                                    <select class="form-select select w-50" id="selectSize" aria-label="Default select example">
+                                        <option selected>25 sm</option>
+                                        <option value="30 sm">30 sm</option>
+                                        <option value="35 sm">35 sm</option>
+                                    </select>
+                                </div>
+
+                                <div class="checkBoxDiv mb-3">
+                                    <div class="row">
+                                        <h5>On Pizza:</h5>
+                                        <div class="col col-6">
+
+                                            <div class="tomatoDiv mb-3">
+                                                <input type="checkbox" class="form-check-input checkbox" name="Tomato"
+                                                    id="Tomato">
+                                                <label for="Toomato">Tomato</label>
+                                            </div>
+
+                                            <div class="turkeyMeetDiv mb-3">
+                                                <input type="checkbox" class="form-check-input checkbox"
+                                                    name="Turkey Meet" id="Turkey Meet">
+                                                <label for="Turkey Meet">Turkey Meet</label>
+                                            </div>
+
+                                            <div class="OliveDiv mb-3">
+                                                <input type="checkbox" class="form-check-input checkbox" name="Olive"
+                                                    id="Olive">
+                                                <label for="Olive">Olive</label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col col-6 ">
+                                            <div class="Pickled_cucumberDiv mb-3">
+                                                <input type="checkbox" class="form-check-input checkbox"
+                                                    name="Pickled cucumber" id="Pickled cucumber">
+                                                <label for="Pickled cucumber">Pickled cucumber</label>
+                                            </div>
+                                            <div class="MushroomDiv mb-3">
+                                                <input type="checkbox" class="form-check-input checkbox" name="Mushroom"
+                                                    id="Mushroom">
+                                                <label for="Mushroom">Mushroom</label>
+                                            </div>
+                                            <div class="Horse_meatDiv mb-3">
+                                                <input type="checkbox" class="form-check-input checkbox"
+                                                    name="Horse meat" id="Horse meat">
+                                                <label for="Horse meat">Horse meat</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="add_div mb-4">
+                                    <div class="row">
+                                        <h5>Add:</h5>
+                                        <div class="col col-6">
+                                            <div>
+                                                <input type="checkbox" class="form-check-input checkboxAdd" name="Pepper"
+                                                    id="Pepper">
+                                                <label for="Pepper">Pepper</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col col-6">
+                                            <div>
+                                                <input type="checkbox" class="form-check-input checkboxAdd" name="Sausages"
+                                                    id="Sausages">
+                                                <label for="Sausages">Sausages</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btns text-center mb-4">
+                                    <button class="btn buttonClick btn-outline-secondary w-50 ">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="orderedDiv w-75">
+                <div class="ordered_List d-flex flex-wrap gap-5 m-3">
+                    <!-- <div class="cards  border border-dark">
+                        <div class="title d-flex justify-content-between align-items-center" >
+                            <h4 class="m-2">Order:</h4>
+                            <i class="ri-delete-bin-line delete fs-4 m-2"></i>
+                        </div>
+                        <div class="info_user m-2">
+                            <p><span class="fw-bold">Name: </span></p>
+                            <p><span class="fw-bold">Phone: </span></p>
+                            <p><span class="fw-bold">Address: </span></p>
+                        </div>
+                        <hr>
+
+                        <div class="info_pizza m-2">
+                            <p><span class="fw-bold">Dough thickness: </span></p>
+                            <p><span class="fw-bold">Size: </span></p>
+                            <p><span class="fw-bold">On Pizza: </span></p>
+                            <p><span class="fw-bold">Add: </span></p>
+                        </div>
+                    </div> -->
+
+                   
+                </div>
+            </div>
+            
+        </div>
+        <!-- </div> -->
+
+        </div>
+    </main>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
